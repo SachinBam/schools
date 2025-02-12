@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Science Chapters</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #f9f9f9, #d1e0e0);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .chapters {
+            text-align: center;
+            margin: 50px 20px;
+            padding: 20px;
+        }
+
+        .chapters h2 {
+            font-size: 3rem;
+            color: #2d3e50;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .chapters p {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 40px;
+            font-style: italic;
+            font-weight: 400;
+        }
+
+        .chapters-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .chapter {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            overflow: hidden;
+            position: relative;
+            text-align: left;
+        }
+
+        .chapter:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+        }
+
+        .chapter h3 {
+            font-size: 1.8rem;
+            color: #2d3e50;
+            margin-bottom: 15px;
+            font-weight: 700;
+            text-transform: capitalize;
+        }
+
+        .chapter a {
+            text-decoration: none;
+            display: inline-block;
+            background: linear-gradient(45deg, #6a82fb, #fc5c7d);
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: bold;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .chapter a:hover {
+            background: linear-gradient(45deg, #fc5c7d, #6a82fb);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
+        }
+
+        .chapter:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(45deg, #6a82fb, #fc5c7d);
+            border-radius: 12px 12px 0 0;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="chapters">
+        <h2>Data Science Chapter Notes</h2>
+        <p>Click on a chapter to access its notes.</p>
+        <div class="chapters-container">
+            <!-- Chapter 1 -->
+            <div class="chapter">
+                <h3>Chapter 1: Introduction to Data Science</h3>
+                <a href="assets/data-science/chapter1.pdf" class="btn" download>Download Chapter 1</a>
+            </div>
+            
+            <!-- Chapter 2 -->
+            <div class="chapter">
+                <h3>Chapter 2: Data Cleaning and Preprocessing</h3>
+                <a href="assets/data-science/chapter2.pdf" class="btn" download>Download Chapter 2</a>
+            </div>
+
+            <!-- Chapter 3 -->
+            <div class="chapter">
+                <h3>Chapter 3: Exploratory Data Analysis</h3>
+                <a href="assets/data-science/chapter3.pdf" class="btn" download>Download Chapter 3</a>
+            </div>
+
+            <!-- Chapter 4 -->
+            <div class="chapter">
+                <h3>Chapter 4: Machine Learning Algorithms</h3>
+                <a href="assets/data-science/chapter4.pdf" class="btn" download>Download Chapter 4</a>
+            </div>
+
+            <!-- Chapter 5 -->
+            <div class="chapter">
+                <h3>Chapter 5: Data Visualization</h3>
+                <a href="assets/data-science/chapter5.pdf" class="btn" download>Download Chapter 5</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

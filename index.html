@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC School</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="images/school-logo.png" alt="School Logo">
+            <h1>ABC School</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h2>Welcome to ABC School</h2>
+        <p>Your Future Starts Here</p>
+        <a href="#" class="btn">Explore More</a>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+        <h2>Our Popular Courses</h2>
+        <div class="course-container">
+            <div class="course" id="mathematics" onclick="toggleChapters('math-chapters')">
+                <img src="images/course1.jpg" alt="Course 1">
+                <h3>Mathematics</h3>
+                <p>Learn from the best teachers.</p>
+            </div>
+            <div class="course" id="science" onclick="toggleChapters('science-chapters')">
+                <img src="images/course2.jpg" alt="Course 2">
+                <h3>Science</h3>
+                <p>Explore the wonders of science.</p>
+            </div>
+            <div class="course" id="computer-science" onclick="toggleChapters('cs-chapters')">
+                <img src="images/course3.jpg" alt="Course 3">
+                <h3>Computer Science</h3>
+                <p>Master the digital world.</p>
+            </div>
+        </div>
+
+        <!-- Chapters List for Mathematics (Hidden by default) -->
+        <div id="math-chapters" class="chapters-list" style="display: none;">
+            <h3>Mathematics Chapters</h3>
+            <ul>
+                <li><a href="https://youtu.be/NybHckSEQBI?si=L0nTVB7Jboe9x6xs" target="_blank">Chapter 1: Algebra</a></li>
+                <li><a href="https://youtu.be/k5etrWdIY6o?si=tdRYQTsFSG1xlC_u" target="_blank">Chapter 2: Geometry</a></li>
+                <li><a href="https://youtu.be/mRCXh__pexQ?si=aucYwzd0BjHfbfg0" target="_blank">Chapter 3: Calculus</a></li>
+                <li><a href="https://youtu.be/PUB0TaZ7bhA?si=HNvOpsx7oYAGx7b_" target="_blank">Chapter 4: Trigonometry</a></li>
+                <li><a href="https://youtu.be/XZo4xyJXCak?si=kFoT_iChZxjElpAQ" target="_blank">Chapter 5: Statistics</a></li>
+            </ul>
+        </div>
+
+        <!-- Chapters List for Science (Hidden by default) -->
+        <div id="science-chapters" class="chapters-list" style="display: none;">
+            <h3>Science Chapters</h3>
+            <ul>
+                <li><a href="https://youtu.be/b1t41Q3xRM8?si=3l7D5Y-ydivnCUEM">Chapter 1: Physics</a></li>
+                <li><a href="https://youtu.be/k3rRrl9J2F4?si=uchHot-Cc04NB25K">Chapter 2: Chemistry</a></li>
+                <li><a href="https://youtu.be/3tisOnOkwzo?si=LPqn8B4LnBoh-hAx">Chapter 3: Biology</a></li>
+                <li><a href="https://youtu.be/Ck_e4CRM82Y?si=x1pRvU9SrDIZCyyl">Chapter 4: Earth Science</a></li>
+                <li><a href="https://youtu.be/0rHUDWjR5gg?si=RYbzPA7vrqj0UVIM">Chapter 5: Astronomy</a></li>
+            </ul>
+        </div>
+
+        <!-- Chapters List for Computer Science (Hidden by default) -->
+        <div id="cs-chapters" class="chapters-list" style="display: none;">
+            <h3>Computer Science Chapters</h3>
+            <ul>
+                <li><a href="https://youtu.be/zOjov-2OZ0E?si=lh8359Nm_FmRgE4M">Chapter 1: Programming Basics</a></li>
+                <li><a href="https://youtu.be/5_5oE5lgrhw?si=asg3EcDbdG9_AuAM">Chapter 2: Data Structures</a></li>
+                <li><a href="https://youtu.be/8hly31xKli0?si=MsIQUn_3LSf3zReA">Chapter 3: Algorithms</a></li>
+                <li><a href="https://youtu.be/gQojMIhELvM?si=QhuL_0jXKS85qKSM">Chapter 4: Web Development</a></li>
+                <li><a href="https://youtu.be/wR0jg0eQsZA?si=tMKoXqnBkyl4ruOW">Chapter 5: Databases</a></li>
+            </ul>
+        </div>
+    </section>
+
+   <!-- Notes Section -->
+<section class="notes">
+    <h2><i class="fas fa-book"></i> Notes</h2>
+    <p>Access and download the notes for your courses here.</p>
+    <div class="notes-container">
+        <!-- Mathematics Notes -->
+        <div class="note" onclick="redirectToChapter('mathematics')">
+            <img src="images/mathematics-note.jpg" alt="Mathematics Notes">
+            <h3>Mathematics Notes</h3>
+            <p>Download the Mathematics notes for detailed study.</p>
+        </div>
+        
+        <!-- Science Notes -->
+        <div class="note" onclick="redirectToChapter('science')">
+            <img src="images/science-note.jpg" alt="Science Notes">
+            <h3>Science Notes</h3>
+            <p>Download the Science notes for a thorough understanding.</p>
+        </div>
+        
+        <!-- Computer Science Notes -->
+        <div class="note" onclick="redirectToChapter('computer-science')">
+            <img src="images/cs-note.jpg" alt="Computer Science Notes">
+            <h3>Computer Science Notes</h3>
+            <p>Download the Computer Science notes for comprehensive learning.</p>
+        </div>
+    </div>
+</section>
+
+
+    <!-- Advance Courses Section -->
+    <section class="advance-courses">
+        <h2><i class="fas fa-graduation-cap"></i> Advance Courses</h2>
+        <p>Enhance your skills with our expert-level courses.</p>
+
+        <div class="advance-course-container">
+            <div class="advance-course">
+                <img src="images/ai-course.jpg" alt="Artificial Intelligence">
+                <h3>Artificial Intelligence</h3>
+                <p>Master AI and Machine Learning techniques.</p>
+                <!-- Link to the chapters page -->
+                <a href="chapters.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="advance-course">
+                <img src="images/data-science.jpg" alt="Data Science">
+                <h3>Data Science</h3>
+                <p>Become an expert in data analytics and visualization.</p>
+                <!-- Link to the chapters_data_science.html page -->
+    <a href="chapters_data_science.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="advance-course">
+                <img src="images/cybersecurity.jpg" alt="Cyber Security">
+                <h3>Cyber Security</h3>
+                <p>Protect digital assets with ethical hacking skills.</p>
+                 <!-- Link to the chapters_cyber_security.html page -->
+    <a href="chapters_cyber_security.html" class="btn">Learn More</a>
+            </div>
+
+            <div class="advance-course">
+                <img src="images/cloud-computing.jpg" alt="Cloud Computing">
+                <h3>Cloud Computing</h3>
+                <p>Learn AWS, Google Cloud, and Azure fundamentals.</p>
+                   <!-- Link to the chapters_cloud_computing.html page -->
+    <a href="chapters_cloud_computing.html" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+
+
+<script>
+    function redirectToChapter(subject) {
+        if(subject === 'mathematics') {
+            // Redirect to a new page for Mathematics Chapter Notes
+            window.location.href = 'mathematics-chapter-notes.html';
+        }
+        if(subject === 'science') {
+            // Redirect to a new page for Science Chapter Notes
+            window.location.href = 'science-chapter-notes.html';
+        }
+        if(subject === 'computer-science') {
+            // Redirect to a new page for Computer Science Chapter Notes
+            window.location.href = 'computer-science-chapter-notes.html'; // Example URL
+        }
+    }
+</script>
+
+
+    <!-- Inquiry Section -->
+    <section class="inquiry">
+        <h2><i class="fas fa-question-circle"></i> Have Questions? Inquire Now!</h2>
+        <p>Fill in the form below and we'll get back to you as soon as possible.</p>
+        <form action="https://script.google.com/macros/s/AKfycbxkUaU3KMWYdQzyk4kK5RNvFpxejDuJbdxCqAB49C2HVpuk9B1SZkdUg8InQLZQRR1N9Q/exec" method="POST">
+            <label for="name"><i class="fas fa-user"></i> Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+            <label for="message"><i class="fas fa-comment-dots"></i> Your Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Enter your inquiry" required></textarea>
+
+            <button type="submit" class="btn">Submit Inquiry <i class="fas fa-paper-plane"></i></button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 ABC School | Designed By Sachin Bam❤️</p>
+    </footer>
+
+    <script>
+        // JavaScript function to toggle visibility of the chapters list
+        function toggleChapters(chapterId) {
+            const chapters = document.getElementById(chapterId);
+            // Toggle the visibility of the chapter list
+            if (chapters.style.display === "none") {
+                chapters.style.display = "block";
+            } else {
+                chapters.style.display = "none";
+            }
+        }
+    </script>
+</body>
+
+</html>

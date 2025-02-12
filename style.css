@@ -1,0 +1,611 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #f9f9f9;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #003366;
+    color: white;
+    padding: 20px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo Section */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Navigation Menu */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+/* Navigation Links Hover */
+nav ul li a:hover {
+    color: #ff9800; /* Change text color to orange */
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/school-bg.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.hero h2 {
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 22px;
+    margin-top: 10px;
+    font-weight: 400;
+}
+
+.hero .btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    background-color: #ff9800;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+/* Button Hover */
+.hero .btn:hover {
+    background-color: #e68900;
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Courses Section */
+.courses {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.course {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Course Hover */
+.course:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.course img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.course h3 {
+    margin: 15px 0;
+    font-size: 22px;
+}
+
+/* Chapters List (Styled) */
+.chapters-list {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.chapters-list h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.chapters-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chapters-list ul li {
+    font-size: 18px;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f0f4f7;
+    border-radius: 8px;
+    transition: 0.3s ease, transform 0.3s ease;
+}
+
+/* Chapters Hover */
+.chapters-list ul li:hover {
+    background-color: #003366;
+    color: white;
+    transform: translateX(5px);
+}
+
+.chapters-list ul li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Inquiry Section - Customized */
+.inquiry {
+    background: linear-gradient(135deg, #f7f7f7, #e0e0e0);
+    padding: 50px 20px;
+    margin-top: 50px;
+    border-radius: 12px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    margin: 50px auto;
+    animation: fadeIn 0.5s ease-in-out;
+    position: relative;
+}
+
+/* Inquiry Title */
+.inquiry h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+/* Inquiry Icon */
+.inquiry h2 i {
+    color: #ff9800;
+    margin-right: 10px;
+}
+
+/* Inquiry Description */
+.inquiry p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #666;
+}
+
+/* Form Styling */
+.inquiry form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+/* Input and Textarea Fields */
+.inquiry input,
+.inquiry textarea {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    transition: all 0.3s ease;
+    background: #fafafa;
+    box-shadow: inset 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.inquiry input:focus,
+.inquiry textarea:focus {
+    border-color: #ff9800;
+    outline: none;
+    box-shadow: inset 0px 4px 10px rgba(255, 152, 0, 0.3);
+}
+
+.inquiry input:focus::placeholder,
+.inquiry textarea:focus::placeholder {
+    color: #ff9800;
+}
+
+/* Button Styling */
+.inquiry button {
+    padding: 16px 30px;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(0);
+}
+
+/* Button Hover */
+.inquiry button:hover {
+    background: #e68900;
+    transform: translateY(-5px);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.inquiry button i {
+    margin-left: 10px;
+}
+
+/* Placeholder Text */
+.inquiry input::placeholder,
+.inquiry textarea::placeholder {
+    font-style: italic;
+    color: #aaa;
+}
+
+/* Inquiry Form Layout - More Spacing and Animation */
+.inquiry form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: left;
+    animation: slideIn 0.5s ease-out;
+}
+
+/* Icon Styling in Labels */
+.inquiry label i {
+    font-size: 20px;
+    color: #ff9800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Hero Section */
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    header {
+        padding: 15px 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .course-container {
+        flex-direction: column;
+    }
+
+    .course {
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .inquiry {
+        padding: 30px 15px;
+    }
+
+    .inquiry form {
+        width: 100%;
+    }
+}
+
+/* Smooth Animation for Form */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Footer */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 16px;
+}
+/* Notes Section Styling */
+.notes {
+    padding: 50px 20px;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+.notes h2 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.notes p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.notes-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.note {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Effect with Scale and Shadow */
+.note:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: #eef7ff;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Apply Floating Animation */
+.note:hover {
+    animation: float 1s ease-in-out infinite;
+}
+
+/* Image Styling */
+.note img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Image Zoom Effect */
+.note:hover img {
+    transform: scale(1.1);
+}
+
+/* Title Styling */
+.note h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+/* Title Color Change on Hover */
+.note:hover h3 {
+    color: #0055cc;
+}
+
+/* Text Styling */
+.note p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+/* Text Color Change on Hover */
+.note:hover p {
+    color: #333;
+}
+
+/* Button Styling */
+.note .btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.note .btn:hover {
+    background-color: #0055cc;
+    transform: scale(1.1);
+}
+
+/* Glowing Border Effect */
+.note::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff, #ff00ff);
+    z-index: -1;
+    filter: blur(15px);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/* Activate Glowing Border on Hover */
+.note:hover::before {
+    opacity: 1;
+}
+
+/* Advance Courses Section */
+.advance-courses {
+    padding: 50px 20px;
+    background-color: #eef7ff;
+    text-align: center;
+}
+
+.advance-courses h2 {
+    font-size: 36px;
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+.advance-courses p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 40px;
+}
+
+.advance-course-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.advance-course {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hover Animation */
+.advance-course:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: #dfeeff;
+}
+
+.advance-course img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Image Zoom Effect */
+.advance-course:hover img {
+    transform: scale(1.1);
+}
+
+/* Course Title */
+.advance-course h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+/* Hover Color Change */
+.advance-course:hover h3 {
+    color: #0055cc;
+}
+
+/* Course Description */
+.advance-course p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.advance-course:hover p {
+    color: #333;
+}
+
+/* Button Styling */
+.advance-course .btn {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Button Hover Effect */
+.advance-course .btn:hover {
+    background-color: #0055cc;
+    transform: scale(1.1);
+}
